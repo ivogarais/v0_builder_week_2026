@@ -4,7 +4,12 @@ import { useState, useRef, useEffect } from 'react';
 import { useChat } from '@ai-sdk/react';
 import { DefaultChatTransport } from 'ai';
 import { Send, Loader2, Bot, User, Calendar, FileText, Mail, AlertCircle } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+function cn(...inputs: (string | boolean | undefined | null)[]) {
+  return twMerge(clsx(inputs));
+}
 
 interface ChatInterfaceProps {
   conversationId?: string;

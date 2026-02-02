@@ -4,7 +4,12 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { MessageSquare, Plus, Trash2, Loader2 } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { clsx } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+function cn(...inputs: (string | boolean | undefined | null)[]) {
+  return twMerge(clsx(inputs));
+}
 
 interface Conversation {
   id: string;
