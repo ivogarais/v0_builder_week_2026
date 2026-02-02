@@ -2,6 +2,7 @@ import { ConversationList } from '../../components/chat/conversation-list'
 import Link from 'next/link'
 import { Bot, Settings, Plug, Smartphone } from 'lucide-react'
 
+// Chat layout with sidebar
 export default function ChatLayout({
   children,
 }: {
