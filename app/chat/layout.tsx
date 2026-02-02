@@ -1,6 +1,6 @@
-import { ConversationList } from '@/components/chat/conversation-list';
-import Link from 'next/link';
-import { Bot, Settings, Plug, Smartphone } from 'lucide-react';
+import { ConversationList } from '../../components/chat/conversation-list'
+import Link from 'next/link'
+import { Bot, Settings, Plug, Smartphone } from 'lucide-react'
 
 export default function ChatLayout({
   children,

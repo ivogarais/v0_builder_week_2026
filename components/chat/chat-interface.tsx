@@ -1,14 +1,12 @@
-'use client';
+'use client'
 
-import { useState, useRef, useEffect } from 'react';
-import { useChat } from '@ai-sdk/react';
-import { DefaultChatTransport } from 'ai';
-import { Send, Loader2, Bot, User, Calendar, FileText, Mail, AlertCircle } from 'lucide-react';
-import { clsx } from 'clsx';
-import { twMerge } from 'tailwind-merge';
+import { useState, useRef, useEffect } from 'react'
+import { useChat } from '@ai-sdk/react'
+import { DefaultChatTransport } from 'ai'
+import { Send, Loader2, Bot, User, Calendar, FileText, Mail, AlertCircle } from 'lucide-react'
 
 function cn(...inputs: (string | boolean | undefined | null)[]) {
-  return twMerge(clsx(inputs));
+  return inputs.filter(Boolean).join(' ')
 }
 
 interface ChatInterfaceProps {
