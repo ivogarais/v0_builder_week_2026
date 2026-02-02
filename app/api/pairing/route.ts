@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/server';
-import { randomBytes } from 'crypto';
+import { NextRequest, NextResponse } from 'next/server'
+import { createClient } from '../../../lib/supabase/server'
+import { randomBytes } from 'crypto'
 
 // Generate a 6-character alphanumeric code
 function generatePairingCode(): string {

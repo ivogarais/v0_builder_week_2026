@@ -1,6 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '../../../../lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
-import type { UpdateDocumentRequest, Document, ApiResponse } from '@/lib/types/app-brain'
+import type { UpdateDocumentRequest, Document, ApiResponse } from '../../../../lib/types/app-brain'
 
 // GET /api/documents/[id] - Get a single document
 export async function GET(

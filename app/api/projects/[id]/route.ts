@@ -1,6 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '../../../../lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
-import type { UpdateProjectRequest, Project, ApiResponse } from '@/lib/types/app-brain'
+import type { UpdateProjectRequest, Project, ApiResponse } from '../../../../lib/types/app-brain'
 
 // GET /api/projects/[id] - Get a single project
 export async function GET(

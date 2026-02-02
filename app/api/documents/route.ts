@@ -1,6 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '../../../lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
-import type { CreateDocumentRequest, Document, ApiResponse, PaginatedResponse } from '@/lib/types/app-brain'
+import type { CreateDocumentRequest, Document, ApiResponse, PaginatedResponse } from '../../../lib/types/app-brain'
 
 // GET /api/documents - List documents with optional project filter
 export async function GET(request: NextRequest) {

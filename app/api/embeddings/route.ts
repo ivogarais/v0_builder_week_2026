@@ -1,6 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '../../../lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
-import type { ApiResponse } from '@/lib/types/app-brain'
+import type { ApiResponse } from '../../../lib/types/app-brain'
 
 // Configuration for chunking
 const CHUNK_SIZE = 1000 // characters per chunk

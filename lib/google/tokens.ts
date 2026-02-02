@@ -1,5 +1,5 @@
-import { createClient } from '@/lib/supabase/server';
-import type { OAuthToken, GoogleTokenResponse } from '@/lib/types/agenthub';
+import { createClient } from '../supabase/server'
+import type { OAuthToken, GoogleTokenResponse } from '../types/agenthub'
 
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID!;
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET!;

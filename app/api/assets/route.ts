@@ -1,6 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '../../../lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
-import type { Asset, AssetType, ApiResponse, PaginatedResponse } from '@/lib/types/app-brain'
+import type { Asset, AssetType, ApiResponse, PaginatedResponse } from '../../../lib/types/app-brain'
 
 function getAssetType(mimeType: string): AssetType {
   if (mimeType.startsWith('image/')) return 'image'

@@ -1,6 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '../../../lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
-import type { SemanticSearchRequest, SemanticSearchResult, ApiResponse } from '@/lib/types/app-brain'
+import type { SemanticSearchRequest, SemanticSearchResult, ApiResponse } from '../../../lib/types/app-brain'
 
 // POST /api/search - Semantic search across documents
 export async function POST(request: NextRequest) {

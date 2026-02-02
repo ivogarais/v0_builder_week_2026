@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/server';
+import { NextRequest, NextResponse } from 'next/server'
+import { createClient } from '../../../../lib/supabase/server'
 
 // GET - List all paired devices for current user
 export async function GET() {

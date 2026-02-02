@@ -1,6 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '../../../lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
-import type { CreateProjectRequest, Project, ApiResponse, PaginatedResponse } from '@/lib/types/app-brain'
+import type { CreateProjectRequest, Project, ApiResponse, PaginatedResponse } from '../../../lib/types/app-brain'
 
 // GET /api/projects - List all projects for the current user
 export async function GET(request: NextRequest) {

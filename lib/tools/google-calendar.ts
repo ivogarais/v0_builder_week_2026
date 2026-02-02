@@ -1,7 +1,7 @@
-import { tool } from 'ai';
-import { z } from 'zod';
-import { getValidGoogleToken } from '@/lib/google/tokens';
-import type { GoogleCalendarEvent } from '@/lib/types/agenthub';
+import { tool } from 'ai'
+import { z } from 'zod'
+import { getValidGoogleToken } from '../google/tokens'
+import type { GoogleCalendarEvent } from '../types/agenthub'
 
 const CALENDAR_API = 'https://www.googleapis.com/calendar/v3';
 

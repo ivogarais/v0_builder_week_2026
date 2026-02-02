@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/server';
-import { revokeGoogleToken } from '@/lib/google/tokens';
+import { NextRequest, NextResponse } from 'next/server'
+import { createClient } from '../../../lib/supabase/server'
+import { revokeGoogleToken } from '../../../lib/google/tokens'
 
 // GET - List user's integrations
 export async function GET() {

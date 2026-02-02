@@ -1,6 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '../../../../lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
-import type { Asset, ApiResponse } from '@/lib/types/app-brain'
+import type { Asset, ApiResponse } from '../../../../lib/types/app-brain'
 
 // GET /api/assets/[id] - Get a single asset with signed URL
 export async function GET(

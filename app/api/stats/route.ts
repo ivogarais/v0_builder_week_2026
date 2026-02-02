@@ -1,6 +1,6 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient } from '../../../lib/supabase/server'
 import { NextResponse } from 'next/server'
-import type { DashboardStats, ApiResponse } from '@/lib/types/app-brain'
+import type { DashboardStats, ApiResponse } from '../../../lib/types/app-brain'
 
 // GET /api/stats - Get dashboard statistics
 export async function GET() {

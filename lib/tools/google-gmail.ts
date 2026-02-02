@@ -1,6 +1,6 @@
-import { tool } from 'ai';
-import { z } from 'zod';
-import { getValidGoogleToken } from '@/lib/google/tokens';
+import { tool } from 'ai'
+import { z } from 'zod'
+import { getValidGoogleToken } from '../google/tokens'
 
 const GMAIL_API = 'https://gmail.googleapis.com/gmail/v1';
 

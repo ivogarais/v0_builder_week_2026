@@ -1,15 +1,15 @@
-import { NextRequest } from 'next/server';
+import { NextRequest } from 'next/server'
 import {
   convertToModelMessages,
   stepCountIs,
   streamText,
   UIMessage,
   validateUIMessages,
-} from 'ai';
-import { createClient } from '@/lib/supabase/server';
-import { createGoogleCalendarTools } from '@/lib/tools/google-calendar';
-import { createGoogleDriveTools } from '@/lib/tools/google-drive';
-import { createGoogleGmailTools } from '@/lib/tools/google-gmail';
+} from 'ai'
+import { createClient } from '../../../lib/supabase/server'
+import { createGoogleCalendarTools } from '../../../lib/tools/google-calendar'
+import { createGoogleDriveTools } from '../../../lib/tools/google-drive'
+import { createGoogleGmailTools } from '../../../lib/tools/google-gmail'
 
 export const maxDuration = 60;
 
