@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "App Brain - Knowledge Management Platform",
-  description: "Production-ready foundation for AI-powered knowledge management with semantic search, document storage, and asset management.",
+  title: "AgentHub - AI Assistant with Google Integration",
+  description: "Personal AI assistant with Google Calendar, Drive, and Gmail integration. Chat naturally to manage your schedule, files, and emails.",
 }
 
 export const viewport: Viewport = {
