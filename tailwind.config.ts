@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss"
 
+// AgentHub Tailwind Configuration
 const config: Config = {
   darkMode: ["class"],
   content: [
