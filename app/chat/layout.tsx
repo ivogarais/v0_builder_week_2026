@@ -2,61 +2,53 @@ import { ConversationList } from '../../components/chat/conversation-list'
 import Link from 'next/link'
 import { Bot, Settings, Plug, Smartphone } from 'lucide-react'
 
-// Chat layout with sidebar
 export default function ChatLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <div className="flex h-screen bg-background">
-      {/* Sidebar */}
-      <aside className="w-72 border-r border-border flex flex-col bg-card">
-        {/* Logo */}
+      <aside className="w-64 border-r border-border bg-card flex flex-col">
         <div className="p-4 border-b border-border">
           <Link href="/chat" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <Bot className="h-5 w-5 text-primary-foreground" />
-            </div>
-            <span className="font-semibold text-lg">AgentHub</span>
+            <Bot className="h-6 w-6 text-primary" />
+            <span className="text-lg font-semibold text-foreground">AgentHub</span>
           </Link>
         </div>
-
-        {/* Conversations */}
+        
         <div className="flex-1 overflow-hidden">
           <ConversationList />
         </div>
-
-        {/* Bottom Nav */}
-        <nav className="border-t border-border p-2">
+        
+        <nav className="p-2 border-t border-border space-y-1">
           <Link
             href="/integrations"
-            className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-accent transition-colors text-muted-foreground hover:text-foreground"
+            className="flex items-center gap-3 px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
           >
             <Plug className="h-4 w-4" />
-            <span className="text-sm">Integrations</span>
+            Integrations
           </Link>
           <Link
             href="/devices"
-            className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-accent transition-colors text-muted-foreground hover:text-foreground"
+            className="flex items-center gap-3 px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
           >
             <Smartphone className="h-4 w-4" />
-            <span className="text-sm">Devices</span>
+            Devices
           </Link>
           <Link
             href="/settings"
-            className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-accent transition-colors text-muted-foreground hover:text-foreground"
+            className="flex items-center gap-3 px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
           >
             <Settings className="h-4 w-4" />
-            <span className="text-sm">Settings</span>
+            Settings
           </Link>
         </nav>
       </aside>
-
-      {/* Main Content */}
+      
       <main className="flex-1 flex flex-col overflow-hidden">
         {children}
       </main>
     </div>
-  );
+  )
 }

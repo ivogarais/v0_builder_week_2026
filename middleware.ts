@@ -1,7 +1,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
-// Session refresh middleware
 export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
     request,
@@ -30,7 +29,6 @@ export async function middleware(request: NextRequest) {
     },
   )
 
-  // Refresh session if expired
   await supabase.auth.getUser()
 
   return supabaseResponse
